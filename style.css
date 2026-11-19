@@ -18,3 +18,18 @@ h2{
     padding-top: 0px;
     margin-top: 0px;
 }
+
+
+
+.dobozok {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.keret {
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #f2f2f2;
+}
