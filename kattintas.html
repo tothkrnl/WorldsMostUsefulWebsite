@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kattintás számláló</title>
+    <link rel="stylesheet" href="kattintas.css">
+</head>
+<body>
+    <div class="doboz">
+        <h1>Kattintás számláló</h1>
+        <h2 id="szam">0</h2>
+
+        <button onclick="plusz()">+</button>
+        <button onclick="minusz()">-</button>
+    </div>
+    <script>
+        let eredmeny = 0;
+
+        function plusz(){
+            eredmeny++;
+            document.getElementById("szam").textContent = eredmeny;
+        }
+        function minusz(){
+            eredmeny--;
+            document.getElementById("szam").textContent = eredmeny;
+        }
+        function ujra(){
+            eredmeny = 0;
+            document.getElementById("szam").textContent = eredmeny;
+        }
+    </script>
+</body>
+</html>
